@@ -1,0 +1,58 @@
+* {
+    margin:0.2em;
+    padding:0em;
+    font-family: 'Raleway', sans-serif;
+
+}
+/* #root { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.crud_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background: rgb(172, 243, 172);
+    border:1px solid black;
+}
+.crud_form textarea{
+    /* padding:5rem; */
+    font-size: 1.5rem;
+}
+.crud_form select{
+    /* padding:5rem; */
+    font-size: 1.2rem;
+}
+.crud_form .crud_btn {
+    background-color: antiquewhite;
+    cursor: pointer;
+    border: 1px solid black;
+    padding:1rem;
+}
+.crud_form .crud_btn:hover {
+    background-color: rgb(220, 175, 109);
+}
+
+.crud_form #alert {
+    color:red;
+}
+
+.game {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.game button {
+    background-color: antiquewhite;
+    cursor: pointer;
+    border: 1px solid black;
+    padding:1rem;
+}
+.game button:hover {
+    background-color: rgb(220, 175, 109);
+}
