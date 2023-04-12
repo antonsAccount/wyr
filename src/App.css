@@ -18,10 +18,13 @@
     font-size: 1.5rem;
     background: rgb(172, 243, 172);
     border:1px solid black;
+    width:50%;
+    margin: auto;
 }
 .crud_form textarea{
     /* padding:5rem; */
     font-size: 1.5rem;
+    width:85%;
 }
 .crud_form select{
     /* padding:5rem; */
@@ -55,4 +58,14 @@
 }
 .game button:hover {
     background-color: rgb(220, 175, 109);
+}
+
+/* about */
+#about {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:50%;
+    margin: auto;
 }
