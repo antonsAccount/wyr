@@ -1,43 +1,93 @@
 * {
-    margin:0.2em;
     padding:0em;
     font-family: 'Raleway', sans-serif;
-
+    color:rgb(255, 255, 255);
+    
 }
-/* #root { 
+html, body {
+    height: 100%;
+    width: 100%;
+    font-weight: lighter;
+}
+
+body {
+    background-image: url("../public/stars-g02432cde5_1280.png");
+    background-repeat: repeat;
+    min-height: 100vh;
+   
+}
+.active {
+    background-color: rgba(255, 255, 255, 0.77);
+}
+.white-B {
+    width:100%;
+    margin: auto;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.553);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-} */
+    align-items: flex-start;
+    list-style-type: none;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    
+}
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding:1rem; 
+    margin: 0.5rem;
+    border: 1px solid black
+}
+nav a:hover {
+    /* font-size:1.2rem; */
+    background-color: rgba(92, 91, 91, 0.486);
+    color:white;
+}
+
 .crud_form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background: rgb(172, 243, 172);
-    border:1px solid black;
-    width:50%;
+    width:100%;
     margin: auto;
 }
 .crud_form textarea{
     /* padding:5rem; */
-    font-size: 1.5rem;
-    width:85%;
+    font-size: 1.3rem;
+    width:65%;
+    background-color: rgba(255, 255, 255, 0.553);
+    color:black;
 }
 .crud_form select{
     /* padding:5rem; */
     font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.553);
+    color:black
 }
+.dropdown-content {
+    background-color: rgba(255, 255, 255, 0.553);
+    color: black;
+  }
 .crud_form .crud_btn {
-    background-color: antiquewhite;
+    background-color: rgba(255, 255, 255, 0.553);
     cursor: pointer;
     border: 1px solid black;
     padding:1rem;
+    color:black
 }
 .crud_form .crud_btn:hover {
-    background-color: rgb(220, 175, 109);
+    background-color: rgba(92, 91, 91, 0.486);
 }
 
 .crud_form #alert {
@@ -50,22 +100,54 @@
     justify-content: center;
     align-items:center;
 }
+
 .game button {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-color: rgba(255, 255, 255, 0.553);
+    margin-top: 2rem;
     cursor: pointer;
     border: 1px solid black;
     padding:1rem;
+    width: 30%;
+    height: auto;
+    font-size: 1.5rem;
 }
 .game button:hover {
-    background-color: rgb(220, 175, 109);
+    background-color: rgba(92, 91, 91, 0.486);
+    width:28%;
 }
-
+.game #question {
+    width:70%;
+    font-weight: 500;
+}
+.game .prevWyrs {
+    border:1px solid rgb(8, 8, 8);
+    width: 70%;
+    height:auto;
+}
+.game .prevWyrs ul {
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.game .prevWyrs ul li {
+    margin-bottom:0.5rem;
+    font-size: 0.8rem;
+}
 /* about */
 #about {
+    width: 50%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    width:50%;
-    margin: auto;
+}
+#about p,label {
+    padding:1rem;
+}
+/* error */
+.error {
+    text-align:center;
+    font-weight:500
 }

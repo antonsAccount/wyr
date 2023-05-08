@@ -1,11 +1,11 @@
 import { useState } from "react"
 import axios from "axios";
 export default function CrudInterface (props) {
-    let [ doc,setDoc ] = useState({
+    const [ doc,setDoc ] = useState({
         name:"",
         positive:""
     })
-    let [ alert, setAlert ] = useState("")
+    const [ alert, setAlert ] = useState("")
     const handleChange = (e) => {
         setDoc({
             ...doc, name: e.target.value
@@ -24,7 +24,7 @@ export default function CrudInterface (props) {
         }
         else {
             setAlert("");
-            axios.post(("http://localhost:5050/wyr"), {
+            axios.post((process.env.REACT_APP_API_URL), {
                 name: doc.name,
                 positive: doc.positive
             })
@@ -38,7 +38,7 @@ export default function CrudInterface (props) {
         }
         
     return (
-        <div>
+        <div className="white-B">
             <form onSubmit={handleSubmit} className="crud_form">
                 <label htmlFor="input">Name: </label>
                 {/* <input type="text" id="input" value={doc.name} onChange={handleChange} /> */}
@@ -46,6 +46,7 @@ export default function CrudInterface (props) {
                 
                 <label htmlFor="positive">Positive/Negative</label>
                 <select name="positive" id="positive" onChange={dropDownChange}>
+                    
                     <option value="" defaultValue={props.defaultValue || 'Select'} hidden>Choose here</option>
                     <option value="0">negative</option>
                     <option value="1">positive</option>
